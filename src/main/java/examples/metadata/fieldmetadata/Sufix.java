@@ -1,12 +1,12 @@
 package examples.metadata.fieldmetadata;
 
-
-import net.sf.esfinge.metadata.annotation.finder.SearchOnEnclosingElements;
+import net.sf.esfinge.metadata.annotation.finder.SearchInsideAnnotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-@SearchOnEnclosingElements
-public @interface ToPrint {
+@SearchInsideAnnotations
+public @interface Sufix {
+    String value();
 }

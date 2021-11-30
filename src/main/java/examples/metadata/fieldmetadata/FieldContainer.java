@@ -16,6 +16,9 @@ public class FieldContainer {
     @AnnotationProperty(annotation = Prefix.class,property = "value")
     private String prefix;
 
+    @AnnotationProperty(annotation = Sufix.class,property = "value")
+    private String sufix;
+
     public String getPrefix() {
         return prefix;
     }
@@ -30,5 +33,13 @@ public class FieldContainer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSufix() {
+        return sufix;
+    }
+
+    public void setSufix(String sufix) {
+        this.sufix = sufix;
     }
 }

@@ -1,12 +1,10 @@
 package examples.metadata.fieldmetadata;
 
-
-import net.sf.esfinge.metadata.annotation.finder.SearchOnEnclosingElements;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
+@Prefix("Rupees")
+@Sufix("Kg")
 @Retention(RetentionPolicy.RUNTIME)
-@SearchOnEnclosingElements
-public @interface ToPrint {
+public @interface Rupees {
 }

@@ -1,15 +1,16 @@
 package examples.metadata.fieldmetadata;
 
-
+@ToPrint
 public class ClassComMetadatas {
 
-    @ToPrint
+    @Rupees
     private int numerical;
 
-    @ToPrint
+
     @Prefix("Prof.")
     private String name;
 
+    @Sufix("DAIICT")
     private double outro;
 
     public int getNumerical() {
