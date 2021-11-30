@@ -10,7 +10,7 @@ public class PrincipalReadFields {
         ClassContainer container = reader.readingAnnotationsTo(ClassComMetadatas.class,ClassContainer.class);
 
         for(FieldContainer c : container.getFieldMetadata()) {
-            System.out.println(c.getName()+" - "+c.getPrefix()+"/"+ c.getSufix());
+            System.out.println(c.getName()+" - "+c.getPrefix()+"/"+ c.getSufix()+" - "+c.getInterval());
         }
     }
 

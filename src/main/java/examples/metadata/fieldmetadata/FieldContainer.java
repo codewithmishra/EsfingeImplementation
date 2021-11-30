@@ -19,6 +19,9 @@ public class FieldContainer {
     @AnnotationProperty(annotation = Sufix.class,property = "value")
     private String sufix;
 
+    @AnnotationProperty(annotation = InterValue.class,property = "value")
+    private int interval;
+
     public String getPrefix() {
         return prefix;
     }
@@ -41,5 +44,13 @@ public class FieldContainer {
 
     public void setSufix(String sufix) {
         this.sufix = sufix;
+    }
+
+    public int getInterval() {
+        return interval;
+    }
+
+    public void setInterval(int interval) {
+        this.interval = interval;
     }
 }

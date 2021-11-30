@@ -1,11 +1,11 @@
 package examples.metadata.fieldmetadata;
 
 @ToPrint
-public class ClassComMetadatas {
+public class ClassComMetadatas implements Mininterface {
 
-    @Rupees
+    @Sufix("Kg")
+    @InterValue(15)
     private int numerical;
-
 
     @Prefix("Prof.")
     private String name;
