@@ -4,6 +4,8 @@ package examples.metadata.fieldmetadata;
 public class ClassComMetadatas implements Mininterface {
 
     @Sufix("Kg")
+    @Prefix("Rupees")
+    //@Rupees
     @InterValue(15)
     private int numerical;
 
