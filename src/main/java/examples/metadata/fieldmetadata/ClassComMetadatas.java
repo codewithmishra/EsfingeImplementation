@@ -3,15 +3,18 @@ package examples.metadata.fieldmetadata;
 @ToPrint
 public class ClassComMetadatas implements Mininterface {
 
+    //@ToPrint
     @Sufix("Kg")
     @Prefix("Rupees")
     //@Rupees
-    @InterValue(15)
+    @InterValue(10)
     private int numerical;
 
+    //@ToPrint
     @Prefix("Prof.")
     private String name;
 
+    //@ToPrint
     @Sufix("DAIICT")
     private double outro;
 
